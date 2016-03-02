@@ -1,52 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Babylon Health</title>
-</head>
-<body>
-	<header class="header">
-		<img src="assets/images/logo.png" alt="Babylon Health Logo" class="header__logo">
-		<nav>
-			<ul class="header__navigation">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Book a Consultation</a></li>
-			</ul>
-		</nav>
-	</header>
+{% include 'header.html' %}
 
-	<div class="content">
-		<h2>Welcome, how can we help you?</h2>
+<h2>Welcome, how can we help you?</h2>
 
-		<section class="content__section">
-			<article class="content__article">
-				<header>
-					<img src="assets/images/stethoscope.png" alt="">
-					<h3 class="content__title">Book a Consultation</h3>
-				</header>
+<section class="content__section">
+	<article class="content__article">
+		<header>
+			<img src="assets/images/stethoscope.png" alt="">
+			<h3 class="content__title">Book a Consultation</h3>
+		</header>
 
-				<p class="content__paragraph">
-					Seeing a doctor is easy. You can book a consultation in
-					seconds and speak to a leading GP in minutes. Most of the
-					time, patients' problems are resolved there and then, with
-					prescriptions arranged where neccessary.
-				</p>
-				<p class="content__paragraph">
-					Our UK and Ireland GPs are available wherever you are, as a
-					time that suits you.
-				</p>
+		<p class="content__paragraph">
+			Seeing a doctor is easy. You can book a consultation in
+			seconds and speak to a leading GP in minutes. Most of the
+			time, patients' problems are resolved there and then, with
+			prescriptions arranged where neccessary.
+		</p>
+		<p class="content__paragraph">
+			Our UK and Ireland GPs are available wherever you are, as a
+			time that suits you.
+		</p>
 
-				<p class="content__paragraph content__paragraph--highlighted">
-					Unlimited consultations for just £4.99 or €7.99 per month.
-				</p>
-			</article>
+		<p class="content__paragraph content__paragraph--highlighted">
+			Unlimited consultations for just £4.99 or €7.99 per month.
+		</p>
+	</article>
 
-			<div class="content__banner">
-				<img src="assets/images/banner-image.jpg" alt="" class="content__banner-image">
-			</div>
-
-			<button class="content__button">See a Doctor Now</button>
-		</section>
+	<div class="content__banner">
+		<img src="assets/images/banner-image.jpg" alt="" class="content__banner-image">
 	</div>
-</body>
-</html>
+
+	<button class="content__button">See a Doctor Now</button>
+</section>
+
+{% include 'footer.html' %}
