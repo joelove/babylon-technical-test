@@ -1,6 +1,7 @@
 @color-white: rgb(251, 247, 255);
 @color-purple: rgb(128, 111, 148);
 @color-black: lighten(black, 30%);
+@color-blue: rgb(97, 137, 194);
 
 body {
 	margin: 0;
@@ -14,4 +15,69 @@ h2 {
 	font-weight: 300;
 	color: @color-purple;
 	margin: 2rem 0 1rem;
+}
+
+.container {
+	margin: 0 1em;
+
+	@media screen and (min-width: 57em) {
+		margin: 0 auto;
+		width: 55em;
+	}
+}
+
+.content {
+	&__article {
+		padding: 2em;
+	}
+
+	&__section {
+		background-color: white;
+		box-shadow: 0 .1em .2em rgba(0, 0, 0, 0.25);
+		margin-bottom: 2em;
+	}
+
+	&__title {
+		display: inline-block;
+		margin: 0;
+		line-height: 3.5rem;
+		margin-left: .75rem;
+		font-size: 1.4em;
+		color: @color-purple;
+		font-weight: 400;
+
+		&-logo {
+			height: 3.5em;
+			width: 3.5rem;
+			border-radius: 50%;
+			background-color: @color-purple;
+			color: white;
+			display: inline-block;
+			vertical-align: top;
+
+			i {
+				display: block;
+				font-size: 2.5em;
+				line-height: 3.5rem;
+				text-align: center;
+			}
+		}
+	}
+
+	&__paragraph {
+		font-size: 1.1em;
+	}
+
+	&__button {
+		text-transform: uppercase;
+		color: white;
+		border: 0;
+		outline: none;
+		font-weight: 300;
+		background-color: @color-blue;
+		padding: 1em 1.25em;
+		font-size: 1em;
+		margin: 2em;
+		border-radius: 3px;
+	}
 }
