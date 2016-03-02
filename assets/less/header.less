@@ -17,8 +17,28 @@
 		}
 	}
 
-	&__navigation {
+	&__bars {
 		display: inline-block;
+		float: right;
+
+		i {
+			height: 3.5rem;
+			line-height: 3.5rem;
+			font-size: 2.5em;
+			color: @color-white;
+		}
+
+		@media screen and (min-width: 30em) {
+			display: none;
+		}
+	}
+
+	&__navigation {
+		display: none;
+
+		@media screen and (min-width: 30em) {
+			display: inline-block;
+		}
 
 		ul {
 			list-style-type: none;
