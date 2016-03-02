@@ -9,7 +9,7 @@ module.exports = {
         });
       },
       cwd: './',
-      ext: 'twig',
+      ext: 'html',
       ignore: ['node_modules/**'],
       watch: ['views', 'index.js']
     }

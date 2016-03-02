@@ -1,0 +1,69 @@
+.header {
+	height: 3.5rem;
+	padding: .35rem 0;
+	background-color: @color-purple;
+
+	&__logo {
+		width: 3.5rem;
+		height: 3.5rem;
+		display: inline-block;
+		vertical-align: top;
+		color: @color-white;
+		font-size: 3em;
+
+		i {
+			vertical-align: top;
+			line-height: 3.5rem;
+		}
+	}
+
+	&__bars {
+		display: inline-block;
+		float: right;
+
+		i {
+			height: 3.5rem;
+			line-height: 3.5rem;
+			font-size: 2.5em;
+			color: @color-white;
+		}
+
+		@media screen and (min-width: 30em) {
+			display: none;
+		}
+	}
+
+	&__navigation {
+		display: none;
+
+		@media screen and (min-width: 30em) {
+			display: inline-block;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0 0 0 1rem;
+			padding: 0;
+
+			li {
+				display: inline-block;
+
+				&.selected {
+					border-bottom: .3rem solid @color-white;
+					margin-bottom: -.3rem;
+				}
+
+				a {
+					font-size: 1.25em;
+					color: @color-white;
+					text-decoration: none;
+					font-weight: 300;
+					height: 3.5rem;
+					line-height: 3.5rem;
+					padding: 0 1rem;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
