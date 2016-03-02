@@ -11,7 +11,7 @@ app.set('twig options', { strict_variables: false });
 app.engine('html', twig.__express);
 
 app.get('/', function(req, res){
-  res.render('index');
+  res.render('home');
 });
 
 app.listen(app.get('port'), function() {
