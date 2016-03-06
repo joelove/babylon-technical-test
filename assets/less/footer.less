@@ -1,0 +1,21 @@
+.footer {
+	color: @color-grey;
+	border-top: 1px solid lighten(@color-grey, 25%);
+
+	&__copyright {}
+	&__site-links {
+		li {
+			padding: 0;
+			line-height: 3em;
+
+			&:after {
+				content: '|';
+				padding: 0 .5em;
+			}
+
+			&:last-child:after {
+				display: none;
+			}
+		}
+	}
+}
