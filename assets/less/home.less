@@ -1,8 +1,52 @@
-.content {
+.home {
 	&__banner {
 		height: 15em;
 		background-image: url('../images/banner-image.jpg');
 		background-size: cover;
 		background-position: center center;
+	}
+
+	&__title {
+		display: inline-block;
+		margin: 0;
+		line-height: 3.5rem;
+		margin-left: .75rem;
+		font-size: 1.4em;
+		color: @color-purple;
+		font-weight: 400;
+
+		&-logo {
+			height: 3.5em;
+			width: 3.5rem;
+			border-radius: 50%;
+			background-color: @color-purple;
+			color: white;
+			display: inline-block;
+			vertical-align: top;
+
+			i {
+				display: block;
+				font-size: 2.5em;
+				line-height: 3.5rem;
+				text-align: center;
+			}
+		}
+	}
+
+	&__paragraph {
+		font-size: 1.1em;
+	}
+
+	&__button {
+		text-transform: uppercase;
+		color: white;
+		border: 0;
+		outline: none;
+		font-weight: 300;
+		background-color: @color-blue;
+		padding: 1em 1.25em;
+		font-size: 1em;
+		margin: 2em;
+		border-radius: 3px;
 	}
 }
