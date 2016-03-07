@@ -7,7 +7,7 @@
 		<div class="book__row">
 			<h3 class="book__title">Book this consultation for</h3>
 
-			<input type="radio" id="patient0" name="patient" value="0">
+			<input type="radio" id="patient0" name="patient" value="0" checked>
 			<label for="patient0">
 				<img src="images/man.jpg" alt="">
 				<h4>Yourself</h4>
@@ -20,7 +20,7 @@
 			</label>
 
 			<div>
-				<i class="fa fa-cross"></i>
+				<i class="fa fa-plus"></i>
 				<h4>Someone Else</h4>
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 		<div class="book__row">
 			<h3 class="book__title">Select a healthcare professional</h3>
 
-			<input type="radio" id="consultant-type0" name="consultant-type" value="gp">
+			<input type="radio" id="consultant-type0" name="consultant-type" value="gp" checked>
 			<label for="consultant-type0">
 				<i class="fa fa-stethoscope"></i>
 				<h4>GP</h4>
@@ -47,7 +47,7 @@
 			</label>
 
 			<input type="radio" id="consultant-type3" name="consultant-type" value="specialist">
-			<label for="consultant3">
+			<label for="consultant-type3">
 				<i class="fa fa-user-md"></i>
 				<h4>Specialist</h4>
 			</label>
@@ -56,12 +56,12 @@
 		<div class="book__row">
 			<h3 class="book__title">Select the doctor</h3>
 
-			<select name="doctor" id="doctor">
+			<select name="consultant-id" id="consultant-id">
 				<option value="0">Mr. Jeffrey Braithwaite</option>
 				<option value="1">Mr. Rifky Guirgis</option>
 			</select>
 
-			<label for="doctor">
+			<label for="consultant-id">
 				<h5>Mr. Jeffrey Braithwaite</h5>
 				<h6>GP</h6>
 			</label>
