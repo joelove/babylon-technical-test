@@ -7,6 +7,6 @@ module.exports = {
         new (require('less-plugin-clean-css'))()
       ],
     },
-    files: { 'dist/less.min.css': 'assets/less/styles.less' }
+    files: { 'dist/less.min.css': 'src/less/styles.less' }
   }
 };

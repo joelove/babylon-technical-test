@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  var fs_files = grunt.file.expand('assets/javascript/**/*.js');
+  var fs_files = grunt.file.expand('src/javascript/**/*.js');
   var files = {};
 
   for(var file in fs_files) {
