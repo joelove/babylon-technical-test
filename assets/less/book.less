@@ -26,13 +26,17 @@
 				width: 4em;
 				height: 4em;
 				border-radius: 50%;
-				border: 1px solid @color-grey;
+				border: 1px solid @color-lightgrey;
 				margin: 0 auto;
 				overflow: hidden;
 
 				img {
 					width: 100%;
 				}
+			}
+
+			h4 {
+				font-weight: 400;
 			}
 		}
 
@@ -49,19 +53,37 @@
 		}
 	}
 
+	&__title {
+		text-transform: uppercase;
+		color: @color-grey;
+		font-weight: 400;
+		font-size: 1em;
+		margin: 1.5em 0;
+	}
+
 	&__link {
 		display: inline-block;
 		width: 7.5em;
 
 		span {
-			display: inline-block;
-			font-size: 3.2em;
-			width: 1.25em;
-			height: 1.25em;
-			line-height: 1.25em;
-			border-radius: 50%;
-			border: 1px solid @color-grey;
-			margin: 0 1px;
+			a {
+				display: inline-block;
+				font-size: 3.2em;
+				font-weight: 300;
+				width: 1.25em;
+				height: 1.25em;
+				line-height: 1.25em;
+				border-radius: 50%;
+				border: 1px solid @color-lightgrey;
+				color: darken(@color-lightgrey, 5%);
+				background: darken(@color-white, 5%);
+				text-decoration: none;
+				margin: 0 1px;
+			}
+		}
+
+		h4 {
+			font-weight: 400;
 		}
 	}
 
