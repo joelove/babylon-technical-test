@@ -7,22 +7,32 @@
 		& + label {
 			display: inline-block;
 			position: relative;
-			padding-right: 4em;
+			margin-right: 4em;
 			width: 7.5em;
+			cursor: pointer;
 
-			&:after {
+			&:before {
 				content: 'or';
 				color: @color-grey;
 				font-size: 1.6em;
 				font-weight: 300;
 				position: absolute;
-				right: 1rem;
+				right: -3rem;
 				top: 1rem;
 				width: 2rem;
 				line-height: 2rem;
+				pointer-events: none;
 			}
 
-			div {
+			&:last-child {
+				margin-right: 0;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			div, i {
 				width: 4em;
 				height: 4em;
 				border-radius: 50%;
@@ -35,18 +45,46 @@
 				}
 			}
 
+			i {
+				font-size: 2em;
+				line-height: 2em;
+				width: 2em;
+				height: 2em;
+				background: lighten(@color-lightgrey, 20%);
+				color: @color-grey;
+			}
+
 			h4 {
 				font-weight: 400;
 			}
 		}
 
 		&:checked + label {
-			&:after {
+			position: relative;
+
+			&:before {
 				margin-top: 2px;
 			}
 
-			div {
+			&:after {
+				content: '\f00c';
+				font-family: 'FontAwesome';
+				position: absolute;
+				top: 0;
+				left: 1em;
+				width: 1.5em;
+				height: 1.5em;
+				line-height: 1.5em;
+				background: @color-lightgreen;
+				border: 1px solid rgba(255, 255, 255, 0.5);
+				border-radius: 50%;
+				color: white;
+			}
+
+			div, i {
 				border: 2px solid @color-cyan;
+				background-color: @color-cyan;
+				color: white;
 				position: relative;
 				top: 1px;
 			}
@@ -89,5 +127,6 @@
 
 	&__row {
 		padding: 1em 2em;
+		border-bottom: 1px solid lighten(@color-lightgrey, 20%);
 	}
 }
