@@ -45,3 +45,11 @@ To run the tests, use:
 ```
 npm test
 ```
+
+### Code Quality
+
+You can lint the code with ESLint (Airbnb config) using:
+
+```
+npm run lint
+```
