@@ -1,13 +1,67 @@
 .book {
+	text-align: center;
+
 	input[type="radio"] {
 		display: none;
 
 		& + label {
 			display: inline-block;
+			position: relative;
+			padding-right: 4em;
+			width: 7.5em;
+
+			&:after {
+				content: 'or';
+				color: @color-grey;
+				font-size: 1.6em;
+				font-weight: 300;
+				position: absolute;
+				right: 1rem;
+				top: 1rem;
+				width: 2rem;
+				line-height: 2rem;
+			}
+
+			div {
+				width: 4em;
+				height: 4em;
+				border-radius: 50%;
+				border: 1px solid @color-grey;
+				margin: 0 auto;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+				}
+			}
 		}
 
 		&:checked + label {
-			background-color: red;
+			&:after {
+				margin-top: 2px;
+			}
+
+			div {
+				border: 2px solid @color-cyan;
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		width: 7.5em;
+
+		span {
+			display: inline-block;
+			font-size: 3.2em;
+			width: 1.25em;
+			height: 1.25em;
+			line-height: 1.25em;
+			border-radius: 50%;
+			border: 1px solid @color-grey;
+			margin: 0 1px;
 		}
 	}
 
