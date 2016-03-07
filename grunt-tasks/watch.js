@@ -1,6 +1,6 @@
 module.exports = {
   local: {
-    files: ['assets/javascript/**', 'assets/less/**'],
+    files: ['src/javascript/**', 'src/less/**'],
     tasks: ['compile-local'],
     options: { spawn: false, nonull: false }
   },

@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       }
     },
     'build.concat.js': {
-      src: 'tmp/babel/assets/javascript/**/*.js',
+      src: 'tmp/babel/src/javascript/**/*.js',
       dest: 'dist/build.concat.js'
     }
   };
