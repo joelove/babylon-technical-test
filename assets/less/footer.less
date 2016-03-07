@@ -2,9 +2,13 @@
 	color: @color-grey;
 	border-top: 1px solid lighten(@color-grey, 25%);
 	margin-top: 1em;
-	padding-top: 1em;
+	padding: 1em 0;
+	font-size: .85em;
 
-	&__copyright {}
+	&__copyright {
+		margin-right: 1em;
+	}
+
 	&__site-links {
 		display: inline-block;
 
@@ -20,6 +24,30 @@
 			&:last-child:after {
 				display: none;
 			}
+
+			a {
+				text-decoration: none;
+				color: @color-grey;
+			}
+		}
+	}
+
+	&__app-links {
+		display: inline-block;
+		height: 3em;
+
+		li {
+			a {
+				img {
+					height: 2em;
+					padding: .5em 0;
+				}
+			}
+		}
+
+		@media screen and (min-width: @desktop) {
+			position: absolute;
+			right: 0;
 		}
 	}
 }
