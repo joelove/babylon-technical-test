@@ -37,3 +37,11 @@ npm run build
 ```
 
 > Notes: Grunt transpiles the `javascript` folder from ES6/7 to vanilla JavaScript, saves it to a temporary directory, then concatenates it and saves it to `dist/build.concat.js`. Then LESS is then compiled to a single file and minified, `dist/less.min.css`.
+
+### Running the test suite
+
+To run the tests, use:
+
+```
+npm test
+```
