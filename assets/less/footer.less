@@ -11,6 +11,7 @@
 
 	&__site-links {
 		display: inline-block;
+		margin-right: 1em;
 
 		li {
 			padding: 0;
@@ -28,6 +29,10 @@
 			a {
 				text-decoration: none;
 				color: @color-grey;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}
@@ -41,6 +46,7 @@
 				img {
 					height: 2em;
 					padding: .5em 0;
+					vertical-align: middle;
 				}
 			}
 		}
