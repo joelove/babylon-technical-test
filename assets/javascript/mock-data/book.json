@@ -1,0 +1,86 @@
+{
+	"patients": [
+		{
+			"id": "337f32ca-41b5-44ba-8dc5-72d49fddd894",
+			"title": "Yourself",
+			"image": "profile-image-1.jpg"
+		},
+		{
+			"id": "daf7f4af-bd43-449d-96fe-e77430b3470f",
+			"title": "Sarah",
+			"image": "profile-image-2.jpg"
+		}
+	],
+	"consultants": [
+		{
+			"id": "ee4530ce-7df6-4219-80b5-81c5fdc7082b",
+			"name": "Mr. Jeffrey Braithwaite",
+			"type": "gp",
+			"availability": [
+				1462111200,
+				1462113000,
+				1462185000
+			]
+		},
+		{
+			"id": "04e1013e-ed83-49bb-9a17-0b97b87e9b7e",
+			"name": "Mr. Rifky Guirgis",
+			"type": "nurse",
+			"availability": [
+				1462111200,
+				1462113000,
+				1462185000
+			]
+		},
+		{
+			"id": "04e1013e-ed83-49bb-9a17-0b97b87e9b7a",
+			"name": "Prof. Michael Cummings",
+			"type": "gp",
+			"availability": [
+				1462179600,
+				1462113000,
+				1462188600
+			]
+		},
+		{
+			"id": "04e1013e-ed83-49bb-9a17-0b97b87e9b7b",
+			"name": "Dr. Partha Kar",
+			"type": "gp",
+			"availability": [
+				1462111200,
+				1462113000,
+				1462185000
+			]
+		},
+		{
+			"id": "ee4530ce-7df6-4219-80b5-81c5fdc7082c",
+			"name": "Mr. Christopher Guyer",
+			"type": "nurse",
+			"availability": [
+				1462111200,
+				1462113000,
+				1462185000
+			]
+		},
+		{
+			"id": "ee4530ce-7df6-4219-80b5-81c5fdc7082d",
+			"name": "Dr. Steve Hurel",
+			"type": "therapist",
+			"availability": [
+				1462179600,
+				1462113000,
+				1462188600
+			]
+		},
+		{
+			"id": "ee4530ce-7df6-4219-80b5-81c5fdc7082d",
+			"name": "Dr. Ken Lajiz",
+			"type": "specialist",
+			"availability": [
+				1462179600,
+				1462113000,
+				1462188600
+			]
+		}
+	]
+}
