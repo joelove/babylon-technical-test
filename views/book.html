@@ -1,0 +1,106 @@
+{% include 'header.html' %}
+
+<h2>Book a Consultation</h2>
+
+<section class="book">
+	<form action="book" method="post">
+		<div class="book__row">
+			<h3 class="book__title">Book this consultation for</h3>
+
+			<input type="radio" id="patient0" name="patient" value="0" checked>
+			<label for="patient0">
+				<div><img src="images/profile-image-1.jpg" alt=""></div>
+				<h4>Yourself</h4>
+			</label>
+
+			<input type="radio" id="patient1" name="patient" value="1">
+			<label for="patient1">
+				<div><img src="images/profile-image-2.jpg" alt=""></div>
+				<h4>Sarah</h4>
+			</label>
+
+			<div class="book__link">
+				<span><a href="#">+</a></span>
+				<h4>Someone Else</h4>
+			</div>
+		</div>
+
+		<div class="book__row">
+			<h3 class="book__title">Select a healthcare professional</h3>
+
+			<input type="radio" id="consultant-type0" name="consultant-type" value="gp" checked>
+			<label for="consultant-type0">
+				<i class="fa fa-stethoscope"></i>
+				<h4>GP</h4>
+			</label>
+
+			<input type="radio" id="consultant-type1" name="consultant-type" value="nurse">
+			<label for="consultant-type1">
+				<i class="fa fa-user"></i>
+				<h4>Nurse</h4>
+			</label>
+
+			<input type="radio" id="consultant-type2" name="consultant-type" value="therapist">
+			<label for="consultant-type2">
+				<i class="fa fa-users"></i>
+				<h4>Therapist</h4>
+			</label>
+
+			<input type="radio" id="consultant-type3" name="consultant-type" value="specialist">
+			<label for="consultant-type3">
+				<i class="fa fa-user-md"></i>
+				<h4>Specialist</h4>
+			</label>
+		</div>
+
+		<div class="book__row">
+			<h3 class="book__title">Select the doctor</h3>
+
+			<div class="book__select">
+				<select name="consultant-id" id="consultant-id">
+					<option value="0">Mr. Jeffrey Braithwaite</option>
+					<option value="1">Mr. Rifky Guirgis</option>
+				</select>
+
+				<label for="consultant-id">
+					<h5>Mr. Jeffrey Braithwaite</h5>
+					<h6>GP</h6>
+				</label>
+			</div>
+		</div>
+
+		<div class="book__row">
+			<h3 class="book__title">Next available appointment</h3>
+
+			<div class="book__select">
+				<select name="time" id="time">
+					<option value="0">May, 30 at 14:00</option>
+					<option value="1">May, 30 at 15:00</option>
+				</select>
+
+				<label for="time">
+					<h5>May 30 at 14:00</h5>
+					<h6>Click to select a different time</h6>
+				</label>
+			</div>
+		</div>
+
+		<div class="book__row">
+			<p>Get the best from your consultation by upoading a photo or a note:</p>
+
+			<div class="book__attach book__attach--photo">
+				<i class="fa fa-camera"></i>
+				<a href="#">Attach a Photo</a>
+			</div>
+
+			<div class="book__attach book__attach--note">
+				<i class="fa fa-file-text-o"></i>
+				<a href="#">Attach a Note</a>
+			</div>
+		</div>
+
+		<button class="book__button">Book Consultation</button>
+	</form>
+</section>
+
+{% include 'footer.html' %}
