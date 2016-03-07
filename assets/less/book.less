@@ -129,4 +129,27 @@
 		padding: 1em 2em;
 		border-bottom: 1px solid lighten(@color-lightgrey, 20%);
 	}
+
+	&__select {
+		overflow: hidden;
+		display: inline-block;
+		border-radius: 5px;
+		width: auto;
+
+		select {
+			appearance: none;
+			border: none;
+			outline: none;
+			background: @color-cyan;
+			width: 120%;
+			color: white;
+			padding: .7em 1em;
+			font-size: 1.25em;
+			font-weight: 300;
+		}
+
+		label {
+			display: none;
+		}
+	}
 }
