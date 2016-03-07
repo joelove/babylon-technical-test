@@ -1,4 +1,16 @@
 .book {
+	input[type="radio"] {
+		display: none;
+
+		& + label {
+			display: inline-block;
+		}
+
+		&:checked + label {
+			background-color: red;
+		}
+	}
+
 	&__row {
 		padding: 1em 2em;
 	}
