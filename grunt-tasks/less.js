@@ -1,7 +1,7 @@
 module.exports = {
   less: {
     options: {
-      paths: [ 'assets/lcss/' ],
+      paths: [ 'src/less/' ],
       plugins: [
         new (require('less-plugin-autoprefix'))({ browsers: ['last 5 versions'] }),
         new (require('less-plugin-clean-css'))()

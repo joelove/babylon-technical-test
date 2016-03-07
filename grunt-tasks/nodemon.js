@@ -1,6 +1,6 @@
 module.exports = {
   nodemon: {
-    script: 'index.js',
+    script: 'src/javascript/index.js',
     options: {
       nodeArgs: ['--debug'],
       callback: function (nodemon) {
